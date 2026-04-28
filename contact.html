@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Stock Market Dashboard</title>
+
+    <link rel="stylesheet" href="templates/css/style.css">
+
+</head>
+<body>
+    <header>
+        <h1>Stock Market Dashboard</h1>
+        <ul class="header_list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </header>
+    <div class="bar"></div>
+    <div class="content">
+        <h2>Contact Us</h2>
+        <p>If you have any questions, suggestions, or feedback about our Stock Market Dashboard, please feel free to reach out to us. We value your input and are here to assist you.</p>
+        <ul>
+            <li>Email: <a href="mailto:info@stockmarketdashboard.com">info@stockmarketdashboard.com</a></li>
+            <li>Phone: +1 (123) 456-7890</li>
+            <li>Address: 123 Market Street, Almaty, Kazakhstan</li>
+            <li>Follow us on social media:
+                <ul>
+                    <li><a href="https://www.facebook.com/stockmarketdashboard" target="_blank">Facebook</a></li>
+                    <li><a href="https://www.twitter.com/stockmarketdash" target="_blank">Twitter</a></li>
+                    <li><a href="https://www.instagram.com/stockmarketdashboard" target="_blank">Instagram</a></li>
+                    <li><a href="https://www.youtube.com/stockmarketdashboard" target="_blank">YouTube</a></li>
+                    <li><a href="https://www.linkedin.com/company/stockmarketdashboard" target="_blank">LinkedIn</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="bar"></div>
+    <footer>
+        <p>2026 Stock Market Dashboard. All rights reserved. It is not intended for actual trading purposes.</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.main_table tr[data-href]').forEach(row => {
+            row.style.cursor = 'pointer';
+            row.addEventListener('click', () => {
+            window.location.href = row.dataset.href;
+            });
+        });
+    </script>
+</body>
+</html>

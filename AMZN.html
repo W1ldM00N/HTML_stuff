@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Graph</title>
+
+    <link rel="stylesheet" href="templates/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Amazon Stock Graph</h1>
+        <ul class="header_list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </header>
+    <div class="bar"></div>
+    <div class="tradingview-widget-container">
+        <div class="tradingview-widget-container__widget"></div>
+        <script
+        type="text/javascript"
+        src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+        {
+        "height": 750,
+        "autosize": true,
+        "symbol": "NASDAQ:AMZN",
+        "interval": "D",
+        "timezone": "Etc/UTC",
+        "theme": "dark",
+        "style": "1",
+        "locale": "ru",
+        "allow_symbol_change": true,
+        "support_host": "https://www.tradingview.com"
+        }
+        </script>
+    </div>
+    <div class="bar"></div>
+    <footer>
+        <p>2026 Stock Market Dashboard. All rights reserved. It is not intended for actual trading purposes.</p>
+    </footer>
+</body>
+</html>

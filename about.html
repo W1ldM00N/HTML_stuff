@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Index</title>
+
+    <link rel="stylesheet" href="templates/css/style.css">
+
+</head>
+<body>
+    <header>
+        <h1>About Us</h1>
+        <ul class="header_list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </header>
+    <div class="bar"></div>
+    <div class="about-main">
+        <div class="about-nonflex">
+            <h2>About Us</h2>
+            <p>Welcome to MarketPulse Dashboard — your real-time command center for stock market analysis. We're a team of traders, developers, and data scientists who live and breathe markets, building tools that cut through the noise to deliver actionable insights.</p>
+            <h2>Our Mission</h2>
+            <p>We believe successful trading starts with clarity. That's why we integrate live TradingView charts, advanced technical indicators, and portfolio tracking into one seamless interface — no more jumping between apps or drowning in data overload. Whether you're day trading NASDAQ movers or tracking long-term investments, our dashboard puts market intelligence at your fingertips.</p>
+            <h2>What Sets Us Apart</h2>
+            <ul class="about-ul">
+                <li>Zero Distractions: Clean, dark-mode interface optimized for focus during market hours</li>
+                <li>Real-Time Precision: Direct TradingView integration with customizable timeframes and symbols</li>
+                <li>Built for Traders: Features you actually use — watchlists, alerts, performance analytics</li>
+                <li>Responsive Everywhere: Desktop precision, mobile speed, tablet flexibility</li>
+                
+            </ul>
+        </div>
+        <div class="ver-bar"></div>
+        <div class="about-nonflex">
+            <img src="images/main_logo.webp" alt="About Us Image" class="about-image" style="width: 300px; height: 300px;">
+            <p>From Almaty to global exchanges, we're helping ambitious traders like you make smarter decisions faster. Start analyzing markets the way they should be analyzed.</p>
+        </div>
+    </div>
+    <div class="bar"></div>
+    <footer>
+        <p>2026 Stock Market Dashboard. All rights reserved. It is not intended for actual trading purposes.</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.main_table tr[data-href]').forEach(row => {
+            row.style.cursor = 'pointer';
+            row.addEventListener('click', () => {
+            window.location.href = row.dataset.href;
+            });
+        });
+    </script>
+</body>
+</html>

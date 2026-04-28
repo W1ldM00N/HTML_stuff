@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Stock Market Dashboard</title>
+
+    <link rel="stylesheet" href="templates/css/style.css">
+
+</head>
+<body>
+    <header>
+        <h1>Stock Market Dashboard</h1>
+        <ul class="header_list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </header>
+    <div class="bar"></div>
+    <div class="main_body">
+        <table class="main_table">
+            <tr>
+                <th><b> Stocks </b></th>
+                <th><b> Current price </b></th>
+                <th><b> Change </b></th>
+            </tr>
+            <tr data-href="TSLA.html">
+                <td><p class="stocks_name"><img src="images/tesla-logo.png" alt="TSLA Logo" class="logo">TSLA - Tesla</p></td>
+                <td>346.65</td>
+                <td>-1.75%</td>
+            </tr>
+            <tr data-href="NVDA.html">
+                <td><p class="stocks_name"><img src="images/nvidia-logo.png" alt="NVDA Logo" class="logo">NVDA - NVIDIA</p></td>
+                <td>178.10</td>
+                <td>+0.26%</td>
+            </tr>
+            <tr data-href="AAPL.html">
+                <td><p class="stocks_name"><img src="images/apple-logo.png" alt="AAPL Logo" class="logo">AAPL - Apple</p></td>
+                <td>253.50</td>
+                <td>-2.07%</td>
+            </tr>
+            <tr data-href="MSFT.html">
+                <td><p class="stocks_name"><img src="images/microsoft-logo.png" alt="MSFT Logo" class="logo">MSFT - Microsoft</p></td>
+                <td>372.29</td>
+                <td>-0.16%</td>
+            </tr>
+            <tr data-href="AMZN.html">
+                <td><p class="stocks_name"><img src="images/amazon-logo.png" alt="AMZN Logo" class="logo">AMZN - Amazon</p></td>
+                <td>213.77</td>
+                <td>+0.46%</td>
+            </tr>
+        </table>
+    </div>
+    <div class="bar"></div>
+    <footer>
+        <p>2026 Stock Market Dashboard. All rights reserved. It is not intended for actual trading purposes.</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.main_table tr[data-href]').forEach(row => {
+            row.style.cursor = 'pointer';
+            row.addEventListener('click', () => {
+            window.location.href = row.dataset.href;
+            });
+        });
+    </script>
+</body>
+</html>
